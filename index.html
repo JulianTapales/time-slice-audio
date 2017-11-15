@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Temporalis</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<script>
+			// force https unless it's localhost
+			if(window.location.protocol === 'http:' && window.location.href.match('localhost') === -1) {
+				window.location.protocol = 'https:';
+			}
+		</script>
+
+		<!-- TODO: figure out how to do this without depending on the google-youtube-upload component -->
+		<script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
+		
+		<script type="text/javascript" src="SlitScan.js"></script>
+		<script type="text/javascript" src="libs/dat.gui.js"></script>
+		<!-- <script type="text/javascript" src="libs/stats.min.js"></script> -->
+		<script type="text/javascript" src="libs/gif.js"></script>
+		<script type="text/javascript" src="volume-meter.js"></script>
+
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		<script src='index.js'></script>
+	</body>
+	
+</html>
